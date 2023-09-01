@@ -1,0 +1,943 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.jeeto.cricket"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:5:5-7:36
+12        android:name="android.hardware.telephony"
+12-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:6:9-50
+13        android:required="false" />
+13-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:7:9-33
+14    <uses-feature
+14-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:8:5-10:36
+15        android:name="android.hardware.camera"
+15-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:9:9-47
+16        android:required="false" />
+16-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:10:9-33
+17
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:12:5-67
+18-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:12:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:13:5-79
+19-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.CALL_PHONE" />
+20-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:14:5-69
+20-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:14:22-66
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:15:5-77
+21-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:15:22-74
+22    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+23    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+24-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:18:5-75
+24-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:18:22-72
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:19:5-80
+25-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:19:22-77
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:20:5-81
+26-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:20:22-78
+27    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+27-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:21:5-83
+27-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:21:22-80
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:22:5-65
+28-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:22:22-62
+29    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES " />
+29-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:23:5-84
+29-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:23:22-81
+30    <uses-permission
+30-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:13:5-70
+31        android:name="android.permission.RECEIVE_SMS"
+31-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:13:22-67
+32        android:protectionLevel="signature" />
+32-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:14:9-44
+33    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Require below permissions for reading sms and otp assist feature -->
+33-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:13:5-76
+33-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:13:22-73
+34    <uses-permission android:name="android.permission.READ_SMS" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+34-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:18:5-67
+34-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:18:22-64
+35    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+35-->[com.google.android.gms:play-services-gcm:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\21ec4047b85de51bc58f4e8ec191b01c\transformed\jetified-play-services-gcm-12.0.1\AndroidManifest.xml:23:5-82
+35-->[com.google.android.gms:play-services-gcm:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\21ec4047b85de51bc58f4e8ec191b01c\transformed\jetified-play-services-gcm-12.0.1\AndroidManifest.xml:23:22-79
+36    <uses-permission android:name="android.permission.WAKE_LOCK" />
+36-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:25:5-68
+36-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:25:22-65
+37
+38    <uses-feature
+38-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\d5b8b83950e769c753367674d8ef541a\transformed\jetified-play-services-maps-12.0.1\AndroidManifest.xml:26:5-28:35
+39        android:glEsVersion="0x00020000"
+39-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\d5b8b83950e769c753367674d8ef541a\transformed\jetified-play-services-maps-12.0.1\AndroidManifest.xml:27:9-41
+40        android:required="true" />
+40-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\d5b8b83950e769c753367674d8ef541a\transformed\jetified-play-services-maps-12.0.1\AndroidManifest.xml:28:9-32
+41
+42    <permission
+42-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:28:5-30:47
+43        android:name="com.jeeto.cricket.permission.C2D_MESSAGE"
+43-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:29:9-63
+44        android:protectionLevel="signature" />
+44-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:30:9-44
+45
+46    <uses-permission android:name="com.jeeto.cricket.permission.C2D_MESSAGE" />
+46-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:32:5-79
+46-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:32:22-76
+47
+48    <permission
+48-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+49        android:name="com.jeeto.cricket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.jeeto.cricket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+53
+54    <application
+54-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:25:5-216:19
+55        android:name="com.jeeto.cricket.application.BaseApplication"
+55-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:26:9-52
+56        android:allowBackup="false"
+56-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:27:9-36
+57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+57-->[androidx.core:core:1.9.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\b45bc1e4b9c186e745531ff228ddc98d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+58        android:debuggable="true"
+58-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:28:9-34
+59        android:icon="@drawable/jeetoapplogo2"
+59-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:29:9-47
+60        android:label="@string/app_name"
+60-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:30:9-41
+61        android:largeHeap="true"
+61-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:31:9-33
+62        android:roundIcon="@drawable/jeetoapplogo2"
+62-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:32:9-52
+63        android:supportsRtl="true"
+63-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:33:9-35
+64        android:testOnly="true"
+65        android:theme="@style/AppTheme"
+65-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:34:9-40
+66        android:usesCleartextTraffic="true"
+66-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:35:9-44
+67        android:windowSoftInputMode="adjustPan" >
+67-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:27:9-48
+68        <uses-library
+68-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:39:9-41:40
+69            android:name="org.apache.http.legacy"
+69-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:40:13-50
+70            android:required="false" />
+70-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:41:13-37
+71
+72        <provider
+73            android:name="androidx.core.content.FileProvider"
+73-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:44:13-62
+74            android:authorities="com.jeeto.cricket.provider"
+74-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:45:13-60
+75            android:exported="false"
+75-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:46:13-37
+76            android:grantUriPermissions="true" >
+76-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:47:13-47
+77            <meta-data
+77-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:48:13-50:58
+78                android:name="android.support.FILE_PROVIDER_PATHS"
+78-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:49:17-67
+79                android:resource="@xml/provider_paths" />
+79-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:50:17-55
+80        </provider>
+81
+82        <activity
+82-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:53:9-62:20
+83            android:name="com.jeeto.cricket.activity.SplashScreen"
+83-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:54:13-50
+84            android:exported="true"
+84-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:55:13-36
+85            android:screenOrientation="portrait" >
+85-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:56:13-49
+86            <intent-filter>
+86-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:57:13-61:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:58:17-69
+87-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:58:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:60:17-77
+89-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:60:27-74
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:63:9-65:52
+93            android:name="com.jeeto.cricket.activity.MainActivity"
+93-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:64:13-50
+94            android:screenOrientation="portrait" />
+94-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:65:13-49
+95        <activity
+95-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:66:9-68:52
+96            android:name="com.jeeto.cricket.activity.RegistrationActivity"
+96-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:67:13-58
+97            android:screenOrientation="portrait" />
+97-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:68:13-49
+98        <activity
+98-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:69:9-71:52
+99            android:name="com.jeeto.cricket.activity.HomeActivity"
+99-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:70:13-50
+100            android:screenOrientation="portrait" />
+100-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:71:13-49
+101        <activity
+101-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:72:9-74:52
+102            android:name="com.jeeto.cricket.activity.LoginActivity"
+102-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:73:13-51
+103            android:screenOrientation="portrait" />
+103-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:74:13-49
+104        <activity
+104-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:75:9-77:52
+105            android:name="com.jeeto.cricket.activity.VerifyOTPActivity"
+105-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:76:13-55
+106            android:screenOrientation="portrait" />
+106-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:77:13-49
+107
+108        <receiver
+108-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:79:9-85:20
+109            android:name="com.jeeto.cricket.utils.IncomingSms"
+109-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:80:13-46
+110            android:exported="true" >
+110-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:81:13-36
+111            <intent-filter>
+111-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:82:13-84:29
+112                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+112-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:83:17-82
+112-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:83:25-79
+113            </intent-filter>
+114        </receiver>
+115
+116        <meta-data
+116-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:87:9-89:55
+117            android:name="com.facebook.sdk.ApplicationId"
+117-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:88:13-58
+118            android:value="@string/facebook_app_id" />
+118-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:89:13-52
+119
+120        <activity
+120-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:91:9-94:48
+121            android:name="com.facebook.FacebookActivity"
+121-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:92:13-57
+122            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+122-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:93:13-96
+123            android:label="@string/app_name"
+123-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:94:13-45
+124            android:theme="@style/com_facebook_activity_theme" />
+124-->[com.facebook.android:facebook-common:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ddb31ae0c999a8f515c9a4d28933ac87\transformed\jetified-facebook-common-4.37.0\AndroidManifest.xml:32:13-63
+125        <activity
+125-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:95:9-106:20
+126            android:name="com.facebook.CustomTabActivity"
+126-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:96:13-58
+127            android:exported="true" >
+127-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:97:13-36
+128            <intent-filter>
+128-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:98:13-105:29
+129                <action android:name="android.intent.action.VIEW" />
+129-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:17-69
+129-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:25-66
+130
+131                <category android:name="android.intent.category.DEFAULT" />
+131-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:17-76
+131-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:27-73
+132                <category android:name="android.intent.category.BROWSABLE" />
+132-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:17-78
+132-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:27-75
+133
+134                <data android:scheme="@string/fb_login_protocol_scheme" />
+134-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:17-75
+134-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:23-72
+135            </intent-filter>
+136        </activity>
+137        <activity
+137-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:107:9-109:52
+138            android:name="com.jeeto.cricket.activity.ForgotVerifyOTPActivity"
+138-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:108:13-61
+139            android:screenOrientation="portrait" />
+139-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:109:13-49
+140        <activity
+140-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:110:9-112:52
+141            android:name="com.jeeto.cricket.activity.NewPasswordActivity"
+141-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:111:13-57
+142            android:screenOrientation="portrait" />
+142-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:112:13-49
+143        <activity
+143-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:113:9-115:52
+144            android:name="com.jeeto.cricket.activity.ContestListActivity"
+144-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:114:13-57
+145            android:screenOrientation="portrait" />
+145-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:115:13-49
+146        <activity
+146-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:116:9-118:52
+147            android:name="com.jeeto.cricket.activity.CreateTeamActivity"
+147-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:117:13-56
+148            android:screenOrientation="portrait" />
+148-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:118:13-49
+149        <activity
+149-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:119:9-121:52
+150            android:name="com.jeeto.cricket.activity.ChooseCandVCActivity"
+150-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:120:13-58
+151            android:screenOrientation="portrait" />
+151-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:121:13-49
+152        <activity
+152-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:122:9-124:52
+153            android:name="com.jeeto.cricket.activity.MyTeamListActivity"
+153-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:123:13-56
+154            android:screenOrientation="portrait" />
+154-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:124:13-49
+155        <activity
+155-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:125:9-127:52
+156            android:name="com.jeeto.cricket.activity.JoinContestActivity"
+156-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:126:13-57
+157            android:screenOrientation="portrait" />
+157-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:127:13-49
+158        <activity
+158-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:128:9-130:52
+159            android:name="com.jeeto.cricket.activity.MyJoinedFixtureContestListActivity"
+159-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:129:13-72
+160            android:screenOrientation="portrait" />
+160-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:130:13-49
+161        <activity
+161-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:131:9-133:52
+162            android:name="com.jeeto.cricket.activity.MyFixtureContestDetailsActivity"
+162-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:132:13-69
+163            android:screenOrientation="portrait" />
+163-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:133:13-49
+164        <activity
+164-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:134:9-136:52
+165            android:name="com.jeeto.cricket.activity.MyJoinedLiveContestListActivity"
+165-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:135:13-69
+166            android:screenOrientation="portrait" />
+166-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:136:13-49
+167        <activity
+167-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:137:9-139:52
+168            android:name="com.jeeto.cricket.activity.MyJoinedResultContestListActivity"
+168-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:138:13-71
+169            android:screenOrientation="portrait" />
+169-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:139:13-49
+170        <activity android:name="com.jeeto.cricket.activity.MyResultContestDetailsActivity" />
+170-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:140:9-77
+170-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:140:19-74
+171        <activity android:name="com.jeeto.cricket.activity.MyLiveContestDetailsActivity" />
+171-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:141:9-75
+171-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:141:19-72
+172        <activity android:name="com.jeeto.cricket.activity.PaymentOptionActivity" />
+172-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:142:9-68
+172-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:142:19-65
+173        <activity android:name="com.jeeto.cricket.activity.MyAccountActivity" />
+173-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:143:9-64
+173-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:143:19-61
+174        <activity android:name="com.jeeto.cricket.activity.PaytmActivity" />
+174-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:144:9-60
+174-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:144:19-57
+175        <activity
+175-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:145:9-148:52
+176            android:name="com.paytm.pgsdk.PaytmPGActivity"
+176-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:146:13-59
+177            android:configChanges="keyboardHidden|orientation|keyboard"
+177-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:147:13-72
+178            android:screenOrientation="portrait" />
+178-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:148:13-49
+179        <activity
+179-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:149:9-151:52
+180            android:name="com.jeeto.cricket.activity.EditProfileActivity"
+180-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:150:13-57
+181            android:screenOrientation="portrait" />
+181-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:151:13-49
+182        <activity
+182-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:152:9-154:52
+183            android:name="com.jeeto.cricket.activity.AddCashActivity"
+183-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:153:13-53
+184            android:screenOrientation="portrait" />
+184-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:154:13-49
+185        <activity
+185-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:155:9-157:52
+186            android:name="com.jeeto.cricket.activity.MyTransactionActivity"
+186-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:156:13-59
+187            android:screenOrientation="portrait" />
+187-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:157:13-49
+188        <activity
+188-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:158:9-160:52
+189            android:name="com.jeeto.cricket.activity.NotificationActivity"
+189-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:159:13-58
+190            android:screenOrientation="portrait" />
+190-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:160:13-49
+191        <activity
+191-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:161:9-163:52
+192            android:name="com.jeeto.cricket.activity.InviteFriendsActivity"
+192-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:162:13-59
+193            android:screenOrientation="portrait" />
+193-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:163:13-49
+194        <activity android:name="com.jeeto.cricket.activity.InvitedFriendListActivity" />
+194-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:164:9-72
+194-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:164:19-69
+195        <activity
+195-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:165:9-167:52
+196            android:name="com.jeeto.cricket.activity.PaymentConfirmationActivity"
+196-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:166:13-65
+197            android:screenOrientation="portrait" />
+197-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:167:13-49
+198        <activity android:name="com.jeeto.cricket.activity.WebviewAcitivity" />
+198-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:168:9-63
+198-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:168:19-60
+199        <activity android:name="com.jeeto.cricket.activity.WithdrawAmountActivity" />
+199-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:169:9-69
+199-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:169:19-66
+200        <activity android:name="com.jeeto.cricket.activity.PayUMoneyPaymentActivity" />
+200-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:170:9-71
+200-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:170:19-68
+201        <activity
+201-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:171:9-173:52
+202            android:name="com.jeeto.cricket.activity.GlobalRankActivity"
+202-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:172:13-56
+203            android:screenOrientation="portrait" />
+203-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:173:13-49
+204        <activity
+204-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:174:9-176:39
+205            android:name="com.payu.custombrowser.PreLollipopPaymentsActivity"
+205-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:175:13-78
+206            android:exported="true" >
+206-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:176:13-36
+207            <intent-filter>
+207-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:28:13-35:29
+208                <data android:scheme="com.jeeto.cricket.success" />
+208-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:17-75
+208-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:23-72
+209
+210                <action android:name="android.intent.action.VIEW" />
+210-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:17-69
+210-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:25-66
+211
+212                <category android:name="android.intent.category.DEFAULT" />
+212-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:17-76
+212-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:27-73
+213                <category android:name="android.intent.category.BROWSABLE" />
+213-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:17-78
+213-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:27-75
+214            </intent-filter>
+215            <intent-filter>
+215-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:36:13-43:29
+216                <data android:scheme="com.jeeto.cricket.failure" />
+216-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:17-75
+216-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:23-72
+217
+218                <action android:name="android.intent.action.VIEW" />
+218-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:17-69
+218-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:25-66
+219
+220                <category android:name="android.intent.category.DEFAULT" />
+220-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:17-76
+220-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:27-73
+221                <category android:name="android.intent.category.BROWSABLE" />
+221-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:17-78
+221-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:27-75
+222            </intent-filter>
+223        </activity>
+224
+225        <service
+225-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:178:9-185:19
+226            android:name="com.jeeto.cricket.FirebaseMessagingService"
+226-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:179:13-53
+227            android:enabled="true"
+227-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:180:13-35
+228            android:exported="true" >
+228-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:181:13-36
+229            <intent-filter>
+229-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:182:13-184:29
+230                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+230-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:183:17-78
+230-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:183:25-75
+231            </intent-filter>
+232        </service>
+233        <service
+233-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:186:9-193:19
+234            android:name="com.jeeto.cricket.FirebaseInstanceIDService"
+234-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:187:13-54
+235            android:enabled="true"
+235-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:188:13-35
+236            android:exported="true" >
+236-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:189:13-36
+237            <intent-filter>
+237-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:190:13-192:29
+238                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+238-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:191:17-80
+238-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:191:25-77
+239            </intent-filter>
+240        </service>
+241
+242        <activity
+242-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:195:9-197:52
+243            android:name="com.jeeto.cricket.activity.UploadKYCActivity"
+243-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:196:13-55
+244            android:screenOrientation="portrait" />
+244-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:197:13-49
+245        <activity
+245-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:198:9-200:52
+246            android:name="com.jeeto.cricket.activity.CreateContestActivity"
+246-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:199:13-59
+247            android:screenOrientation="portrait" />
+247-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:200:13-49
+248        <activity
+248-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:201:9-203:52
+249            android:name="com.jeeto.cricket.activity.SelectPrizeCreateActivity"
+249-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:202:13-63
+250            android:screenOrientation="portrait" />
+250-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:203:13-49
+251        <activity
+251-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:204:9-206:52
+252            android:name="com.jeeto.cricket.activity.EnterInviteCodeContestActivity"
+252-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:205:13-68
+253            android:screenOrientation="portrait" />
+253-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:206:13-49
+254        <activity
+254-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:207:9-209:52
+255            android:name="com.jeeto.cricket.activity.InviteInContestActivity"
+255-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:208:13-61
+256            android:screenOrientation="portrait" />
+256-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:209:13-49
+257        <activity
+257-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:210:9-212:52
+258            android:name="com.jeeto.cricket.activity.TrakNPayActivity"
+258-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:211:13-54
+259            android:screenOrientation="portrait" />
+259-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:212:13-49
+260        <activity
+260-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:213:9-215:52
+261            android:name="com.jeeto.cricket.activity.CashfreeActivity"
+261-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:214:13-54
+262            android:screenOrientation="portrait" />
+262-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:215:13-49
+263        <activity
+263-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:19:9-24:55
+264            android:name="com.payumoney.sdkui.ui.activities.PayUmoneyActivity"
+264-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:20:13-79
+265            android:label="@string/title_activity_citrus"
+265-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:21:13-58
+266            android:screenOrientation="portrait"
+266-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:22:13-49
+267            android:theme="@style/PayumoneyAppTheme"
+267-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:23:13-53
+268            android:windowSoftInputMode="adjustPan" />
+268-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:24:13-52
+269        <activity
+269-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:25:9-28:56
+270            android:name="com.payumoney.sdkui.ui.activities.ReviewOrderActivity"
+270-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:26:13-81
+271            android:screenOrientation="portrait"
+271-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:27:13-49
+272            android:theme="@style/PayumoneyAppTheme" />
+272-->[com.payumoney.sdkui:plug-n-play:1.4.5] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\265365f425a9dd1ab3f174f3dddc3841\transformed\jetified-plug-n-play-1.4.5\AndroidManifest.xml:28:13-53
+273        <activity
+273-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:28:9-31:72
+274            android:name="com.payumoney.core.SdkWebViewActivityNew"
+274-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:29:13-68
+275            android:screenOrientation="portrait"
+275-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:30:13-49
+276            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+276-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:31:13-69
+277        <activity
+277-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:32:9-37:59
+278            android:name="com.payu.custombrowser.CBActivity"
+278-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:33:13-61
+279            android:screenOrientation="portrait"
+279-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:34:13-49
+280            android:theme="@style/Theme.AppCompat"
+280-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:35:13-51
+281            android:windowSoftInputMode="stateAlwaysHidden" />
+281-->[com.payumoney.core:payumoney-sdk:7.4.4] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bf344594b44a0c498254c295ff11b0af\transformed\jetified-payumoney-sdk-7.4.4\AndroidManifest.xml:36:13-60
+282        <activity android:name="com.facebook.CustomTabMainActivity" />
+282-->[com.facebook.android:facebook-common:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ddb31ae0c999a8f515c9a4d28933ac87\transformed\jetified-facebook-common-4.37.0\AndroidManifest.xml:33:9-71
+282-->[com.facebook.android:facebook-common:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ddb31ae0c999a8f515c9a4d28933ac87\transformed\jetified-facebook-common-4.37.0\AndroidManifest.xml:33:19-68
+283
+284        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+284-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:8:9-100
+284-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:8:19-97
+285
+286        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+286-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:10:9-104
+286-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:10:18-101
+287        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+287-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:11:9-93
+287-->[com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\22fee79bfcc6b58a6da7a99072f0a00e\transformed\jetified-play-services-cast-framework-12.0.1\AndroidManifest.xml:11:18-90
+288        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+288-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:22:9-81
+288-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:22:18-78
+289
+290        <activity
+290-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:24:9-26:56
+291            android:name="com.payu.custombrowser.upiintent.PaymentResponseActivity"
+291-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:25:13-84
+292            android:theme="@style/Theme.Transparent" />
+292-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:26:13-53
+293        <activity android:name="com.payu.custombrowser.PrePaymentsActivity" />
+293-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:45:9-79
+293-->[com.payu.custombrowser:payu-custom-browser:7.2.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\87abf135f6f7d724c09dd937a449c382\transformed\jetified-payu-custom-browser-7.2.1\AndroidManifest.xml:45:19-76
+294        <activity android:name="com.payu.magicretry.MainActivity" >
+294-->[com.payu.magicretry:magicretry:1.0.6] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a2ab885adc4294c549471364d081a39f\transformed\jetified-magicretry-1.0.6\AndroidManifest.xml:12:9-21:20
+294-->[com.payu.magicretry:magicretry:1.0.6] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a2ab885adc4294c549471364d081a39f\transformed\jetified-magicretry-1.0.6\AndroidManifest.xml:12:19-66
+295
+296            <!--
+297            intent-filter>
+298                <action android:name="android.intent.action.MAIN" />
+299
+300                <category android:name="android.intent.category.LAUNCHER" />
+301            </intent-filter
+302            -->
+303        </activity>
+304        <activity
+304-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:23:9-27:75
+305            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+305-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:24:13-93
+306            android:excludeFromRecents="true"
+306-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:25:13-46
+307            android:exported="false"
+307-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:26:13-37
+308            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+308-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:27:13-72
+309        <!--
+310            Service handling Google Sign-In user revocation. For apps that do not integrate with
+311            Google Sign-In, this service will never be started.
+312        -->
+313        <service
+313-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:33:9-36:110
+314            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+314-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:34:13-89
+315            android:exported="true"
+315-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:35:13-36
+316            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+316-->[com.google.android.gms:play-services-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\f97fada40a174000bad22bef991c2e84\transformed\jetified-play-services-auth-12.0.1\AndroidManifest.xml:36:13-107
+317        <service
+317-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:27:9-30:40
+318            android:name="com.google.android.gms.tagmanager.TagManagerService"
+318-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:28:13-79
+319            android:enabled="true"
+319-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:29:13-35
+320            android:exported="false" />
+320-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:30:13-37
+321
+322        <activity
+322-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:32:9-44:20
+323            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+323-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:33:13-87
+324            android:exported="true"
+324-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:34:13-36
+325            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+325-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:35:13-37
+326            <intent-filter>
+326-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\28206eac2bb2c1675224a05e00d2fcd0\transformed\jetified-play-services-tagmanager-api-12.0.1\AndroidManifest.xml:36:13-43:29
+327                <data android:scheme="tagmanager.c.com.jeeto.cricket" />
+327-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:17-75
+327-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:104:23-72
+328
+329                <action android:name="android.intent.action.VIEW" />
+329-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:17-69
+329-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:99:25-66
+330
+331                <category android:name="android.intent.category.DEFAULT" />
+331-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:17-76
+331-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:27-73
+332                <category android:name="android.intent.category.BROWSABLE" />
+332-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:17-78
+332-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:102:27-75
+333            </intent-filter>
+334        </activity>
+335
+336        <receiver
+336-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:28:9-32:20
+337            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+337-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:29:13-85
+338            android:enabled="true"
+338-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:30:13-35
+339            android:exported="false" >
+339-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:31:13-37
+340        </receiver>
+341        <receiver
+341-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:33:9-41:20
+342            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+342-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:34:13-100
+343            android:enabled="true"
+343-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:35:13-35
+344            android:exported="true"
+344-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:36:13-36
+345            android:permission="android.permission.INSTALL_PACKAGES" >
+345-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:37:13-69
+346            <intent-filter>
+346-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:38:13-40:29
+347                <action android:name="com.android.vending.INSTALL_REFERRER" />
+347-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:39:17-79
+347-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:39:25-76
+348            </intent-filter>
+349        </receiver>
+350
+351        <service
+351-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:43:9-46:40
+352            android:name="com.google.android.gms.measurement.AppMeasurementService"
+352-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:44:13-84
+353            android:enabled="true"
+353-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:45:13-35
+354            android:exported="false" />
+354-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:46:13-37
+355        <service
+355-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:47:9-51:72
+356            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+356-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:48:13-87
+357            android:enabled="true"
+357-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:49:13-35
+358            android:exported="false"
+358-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:50:13-37
+359            android:permission="android.permission.BIND_JOB_SERVICE" />
+359-->[com.google.firebase:firebase-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a96bad47d6f988cdbb14026f74da6659\transformed\jetified-firebase-analytics-12.0.1\AndroidManifest.xml:51:13-69
+360
+361        <receiver
+361-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:30:9-34:20
+362            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+362-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:31:13-78
+363            android:enabled="true"
+363-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:32:13-35
+364            android:exported="false" >
+364-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:33:13-37
+365        </receiver>
+366
+367        <service
+367-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:36:9-39:40
+368            android:name="com.google.android.gms.analytics.AnalyticsService"
+368-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:37:13-77
+369            android:enabled="true"
+369-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:38:13-35
+370            android:exported="false" />
+370-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:39:13-37
+371        <service
+371-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:40:9-44:72
+372            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+372-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:41:13-80
+373            android:enabled="true"
+373-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:42:13-35
+374            android:exported="false"
+374-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:43:13-37
+375            android:permission="android.permission.BIND_JOB_SERVICE" />
+375-->[com.google.android.gms:play-services-analytics:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\112aabd8a5cd6e14db3080127297f20d\transformed\jetified-play-services-analytics-12.0.1\AndroidManifest.xml:44:13-69
+376
+377        <activity
+377-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:25:9-34:20
+378            android:name="com.google.android.gms.appinvite.PreviewActivity"
+378-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:26:13-76
+379            android:exported="true"
+379-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:27:13-36
+380            android:theme="@style/Theme.AppInvite.Preview" >
+380-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:28:13-59
+381            <intent-filter>
+381-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:29:13-33:29
+382                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+382-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:30:17-90
+382-->[com.google.android.gms:play-services-appinvite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\c0abfebfdb1d09af4bd085a5fa79c728\transformed\jetified-play-services-appinvite-12.0.1\AndroidManifest.xml:30:25-87
+383
+384                <category android:name="android.intent.category.DEFAULT" />
+384-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:17-76
+384-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:101:27-73
+385            </intent-filter>
+386        </activity>
+387        <activity
+387-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:23:9-29:75
+388            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+388-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:24:13-85
+389            android:excludeFromRecents="true"
+389-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:25:13-46
+390            android:exported="true"
+390-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:26:13-36
+391            android:launchMode="singleInstance"
+391-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:27:13-48
+392            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+392-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:28:13-102
+393            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+393-->[com.google.firebase:firebase-auth:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\03ba9e632fd94f85d3afc0224d815645\transformed\jetified-firebase-auth-12.0.1\AndroidManifest.xml:29:13-72
+394        <activity
+394-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\9d1a1d788cf50920e4be26db5527659d\transformed\jetified-play-services-base-12.0.1\AndroidManifest.xml:23:9-26:75
+395            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+395-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\9d1a1d788cf50920e4be26db5527659d\transformed\jetified-play-services-base-12.0.1\AndroidManifest.xml:24:13-79
+396            android:exported="false"
+396-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\9d1a1d788cf50920e4be26db5527659d\transformed\jetified-play-services-base-12.0.1\AndroidManifest.xml:25:13-37
+397            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+397-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\9d1a1d788cf50920e4be26db5527659d\transformed\jetified-play-services-base-12.0.1\AndroidManifest.xml:26:13-72
+398        <!--
+399             FirebaseMessagingService performs security checks at runtime,
+400             no need for explicit permissions despite exported="true"
+401        -->
+402        <service
+402-->[com.google.firebase:firebase-messaging:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\80efb5d4f80f20f7bfabfed41b2d090c\transformed\jetified-firebase-messaging-12.0.1\AndroidManifest.xml:28:9-34:19
+403            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+403-->[com.google.firebase:firebase-messaging:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\80efb5d4f80f20f7bfabfed41b2d090c\transformed\jetified-firebase-messaging-12.0.1\AndroidManifest.xml:29:13-82
+404            android:exported="true" >
+404-->[com.google.firebase:firebase-messaging:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\80efb5d4f80f20f7bfabfed41b2d090c\transformed\jetified-firebase-messaging-12.0.1\AndroidManifest.xml:30:13-36
+405            <intent-filter android:priority="-500" >
+405-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:182:13-184:29
+406                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+406-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:183:17-78
+406-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:183:25-75
+407            </intent-filter>
+408        </service>
+409
+410        <receiver
+410-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:35:9-44:20
+411            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+411-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:36:13-78
+412            android:exported="true"
+412-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:37:13-36
+413            android:permission="com.google.android.c2dm.permission.SEND" >
+413-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:38:13-73
+414            <intent-filter>
+414-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:39:13-43:29
+415                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+415-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:40:17-81
+415-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:40:25-78
+416
+417                <category android:name="com.jeeto.cricket" />
+417-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:42:17-61
+417-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:42:27-58
+418            </intent-filter>
+419        </receiver>
+420        <!--
+421             FirebaseInstanceIdService performs security checks at runtime,
+422             no need for explicit permissions despite exported="true"
+423        -->
+424        <service
+424-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:50:9-56:19
+425            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+425-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:51:13-77
+426            android:exported="true" >
+426-->[com.google.firebase:firebase-iid:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\231520213014fb56c08b60740a593be5\transformed\jetified-firebase-iid-12.0.1\AndroidManifest.xml:52:13-36
+427            <intent-filter android:priority="-500" >
+427-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:190:13-192:29
+428                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+428-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:191:17-80
+428-->D:\demo\jeeto-cricket-app\app\src\main\AndroidManifest.xml:191:25-77
+429            </intent-filter>
+430        </service>
+431
+432        <provider
+432-->[com.google.firebase:firebase-common:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\8ab56be1786e0258306880a34b12c4aa\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:8:9-12:39
+433            android:name="com.google.firebase.provider.FirebaseInitProvider"
+433-->[com.google.firebase:firebase-common:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\8ab56be1786e0258306880a34b12c4aa\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:9:13-77
+434            android:authorities="com.jeeto.cricket.firebaseinitprovider"
+434-->[com.google.firebase:firebase-common:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\8ab56be1786e0258306880a34b12c4aa\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:10:13-72
+435            android:exported="false"
+435-->[com.google.firebase:firebase-common:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\8ab56be1786e0258306880a34b12c4aa\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:11:13-37
+436            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+436-->[com.google.firebase:firebase-common:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\8ab56be1786e0258306880a34b12c4aa\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:12:13-36
+437        <activity
+437-->[com.google.android.gms:play-services-ads-lite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\42645779067567f9a765579da18d39f6\transformed\jetified-play-services-ads-lite-12.0.1\AndroidManifest.xml:29:9-33:64
+438            android:name="com.google.android.gms.ads.AdActivity"
+438-->[com.google.android.gms:play-services-ads-lite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\42645779067567f9a765579da18d39f6\transformed\jetified-play-services-ads-lite-12.0.1\AndroidManifest.xml:30:13-65
+439            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+439-->[com.google.android.gms:play-services-ads-lite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\42645779067567f9a765579da18d39f6\transformed\jetified-play-services-ads-lite-12.0.1\AndroidManifest.xml:31:13-122
+440            android:exported="false"
+440-->[com.google.android.gms:play-services-ads-lite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\42645779067567f9a765579da18d39f6\transformed\jetified-play-services-ads-lite-12.0.1\AndroidManifest.xml:32:13-37
+441            android:theme="@android:style/Theme.Translucent" />
+441-->[com.google.android.gms:play-services-ads-lite:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\42645779067567f9a765579da18d39f6\transformed\jetified-play-services-ads-lite-12.0.1\AndroidManifest.xml:33:13-61
+442
+443        <meta-data
+443-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bb0aa1157cbb1072ad8b8ab7de240ae3\transformed\jetified-play-services-basement-12.0.1\AndroidManifest.xml:23:9-25:69
+444            android:name="com.google.android.gms.version"
+444-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bb0aa1157cbb1072ad8b8ab7de240ae3\transformed\jetified-play-services-basement-12.0.1\AndroidManifest.xml:24:13-58
+445            android:value="@integer/google_play_services_version" />
+445-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\bb0aa1157cbb1072ad8b8ab7de240ae3\transformed\jetified-play-services-basement-12.0.1\AndroidManifest.xml:25:13-66
+446
+447        <activity android:name="com.test.pg.secure.pgsdkv4.PaymentActivity" />
+447-->[:PGSDKVR4] D:\demo\jeeto-cricket-app\PGSDKVR4\build\.transforms\67c76890c0e9892eb00a99b6130c720d\transformed\jetified-PGSDKVR4\AndroidManifest.xml:18:9-79
+447-->[:PGSDKVR4] D:\demo\jeeto-cricket-app\PGSDKVR4\build\.transforms\67c76890c0e9892eb00a99b6130c720d\transformed\jetified-PGSDKVR4\AndroidManifest.xml:18:19-76
+448
+449        <service
+449-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:14:9-16:40
+450            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+450-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:15:13-73
+451            android:exported="false" />
+451-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:16:13-37
+452        <service
+452-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:17:9-19:40
+453            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+453-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:18:13-72
+454            android:exported="false" />
+454-->[com.paytm:pgplussdk:1.1.3] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ed76f7609f45a8740cd836a054606ae9\transformed\jetified-pgplussdk-1.1.3\AndroidManifest.xml:19:13-37
+455
+456        <activity
+456-->[:cashfreeSDK] D:\demo\jeeto-cricket-app\cashfreeSDK\build\.transforms\58a52f7d188c304801150d8d4ad45df8\transformed\jetified-cashfreeSDK\AndroidManifest.xml:18:9-20:72
+457            android:name="com.gocashfree.cashfreesdk.CFPaymentActivity"
+457-->[:cashfreeSDK] D:\demo\jeeto-cricket-app\cashfreeSDK\build\.transforms\58a52f7d188c304801150d8d4ad45df8\transformed\jetified-cashfreeSDK\AndroidManifest.xml:19:13-72
+458            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+458-->[:cashfreeSDK] D:\demo\jeeto-cricket-app\cashfreeSDK\build\.transforms\58a52f7d188c304801150d8d4ad45df8\transformed\jetified-cashfreeSDK\AndroidManifest.xml:20:13-69
+459        <activity android:name="com.gocashfree.cashfreesdk.CFUPIPaymentActivity" />
+459-->[:cashfreeSDK] D:\demo\jeeto-cricket-app\cashfreeSDK\build\.transforms\58a52f7d188c304801150d8d4ad45df8\transformed\jetified-cashfreeSDK\AndroidManifest.xml:21:9-84
+459-->[:cashfreeSDK] D:\demo\jeeto-cricket-app\cashfreeSDK\build\.transforms\58a52f7d188c304801150d8d4ad45df8\transformed\jetified-cashfreeSDK\AndroidManifest.xml:21:19-81
+460
+461        <provider
+461-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+462            android:name="androidx.startup.InitializationProvider"
+462-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+463            android:authorities="com.jeeto.cricket.androidx-startup"
+463-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+464            android:exported="false" >
+464-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+465            <meta-data
+465-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+466                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+466-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+467                android:value="androidx.startup" />
+467-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\be0b970f86b6f720138e043b1f5fe6e1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+468            <meta-data
+468-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\aed9aab14f1634dae19db29bd6424562\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+469                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+469-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\aed9aab14f1634dae19db29bd6424562\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+470                android:value="androidx.startup" />
+470-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\aed9aab14f1634dae19db29bd6424562\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+471        </provider>
+472        <provider
+472-->[com.facebook.android:facebook-marketing:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a11c187a086b19afb54c24ed2445a391\transformed\jetified-facebook-marketing-4.37.0\AndroidManifest.xml:29:9-32:40
+473            android:name="com.facebook.marketing.internal.MarketingInitProvider"
+473-->[com.facebook.android:facebook-marketing:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a11c187a086b19afb54c24ed2445a391\transformed\jetified-facebook-marketing-4.37.0\AndroidManifest.xml:30:13-81
+474            android:authorities="com.jeeto.cricket.MarketingInitProvider"
+474-->[com.facebook.android:facebook-marketing:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a11c187a086b19afb54c24ed2445a391\transformed\jetified-facebook-marketing-4.37.0\AndroidManifest.xml:31:13-73
+475            android:exported="false" />
+475-->[com.facebook.android:facebook-marketing:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\a11c187a086b19afb54c24ed2445a391\transformed\jetified-facebook-marketing-4.37.0\AndroidManifest.xml:32:13-37
+476        <!--
+477         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+478         with the application context. This config is merged in with the host app's manifest,
+479         but there can only be one provider with the same authority activated at any given
+480         point; so if the end user has two or more different apps that use Facebook SDK, only the
+481         first one will be able to use the provider. To work around this problem, we use the
+482         following placeholder in the authority to identify each host application as if it was
+483         a completely different provider.
+484        -->
+485        <provider
+485-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:39:9-42:40
+486            android:name="com.facebook.internal.FacebookInitProvider"
+486-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:40:13-70
+487            android:authorities="com.jeeto.cricket.FacebookInitProvider"
+487-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:41:13-72
+488            android:exported="false" />
+488-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:42:13-37
+489
+490        <receiver
+490-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:44:9-50:20
+491            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+491-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:45:13-86
+492            android:exported="false" >
+492-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:46:13-37
+493            <intent-filter>
+493-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:47:13-49:29
+494                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+494-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:48:17-95
+494-->[com.facebook.android:facebook-core:4.37.0] C:\Users\sheetal.yadav\.gradle\caches\transforms-3\ffbdbd9f2b059157a1ab7c8ab2d46883\transformed\jetified-facebook-core-4.37.0\AndroidManifest.xml:48:25-92
+495            </intent-filter>
+496        </receiver>
+497    </application>
+498
+499</manifest>
