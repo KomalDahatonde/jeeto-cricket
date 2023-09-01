@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-large-v22/values-large-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\87abf135f6f7d724c09dd937a449c382\\transformed\\jetified-payu-custom-browser-7.2.1\\res\\values-large-v22\\values-large-v22.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\87abf135f6f7d724c09dd937a449c382\\transformed\\jetified-payu-custom-browser-7.2.1\\res\\values-large-v22\\values-large-v22.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

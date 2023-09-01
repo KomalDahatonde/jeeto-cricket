@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\c621dc628fdc36a6caa7f804f553552d\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\c621dc628fdc36a6caa7f804f553552d\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

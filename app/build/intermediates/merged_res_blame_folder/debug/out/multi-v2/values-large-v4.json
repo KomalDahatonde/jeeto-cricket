@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\4e48aebf79d31628ceb48e8d00fbbd44\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\4e48aebf79d31628ceb48e8d00fbbd44\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\6c2dc96b9d5750092bd402e41e4b6f1c\\transformed\\material-1.8.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\6c2dc96b9d5750092bd402e41e4b6f1c\\transformed\\material-1.8.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",

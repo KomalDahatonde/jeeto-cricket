@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\27f3babd1c29a8ba6c77c810f6195859\\transformed\\jetified-play-services-wallet-12.0.1\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\27f3babd1c29a8ba6c77c810f6195859\\transformed\\jetified-play-services-wallet-12.0.1\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

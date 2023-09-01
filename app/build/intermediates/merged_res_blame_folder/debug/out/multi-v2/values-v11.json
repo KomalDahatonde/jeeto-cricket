@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\c0abfebfdb1d09af4bd085a5fa79c728\\transformed\\jetified-play-services-appinvite-12.0.1\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\c0abfebfdb1d09af4bd085a5fa79c728\\transformed\\jetified-play-services-appinvite-12.0.1\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\265365f425a9dd1ab3f174f3dddc3841\\transformed\\jetified-plug-n-play-1.4.5\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\265365f425a9dd1ab3f174f3dddc3841\\transformed\\jetified-plug-n-play-1.4.5\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,6,11,16,19,29,33,37,38,42,53,69,75,79",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

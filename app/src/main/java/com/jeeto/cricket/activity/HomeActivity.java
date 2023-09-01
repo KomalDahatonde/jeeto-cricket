@@ -123,20 +123,20 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
 
 
         Animation shake = AnimationUtils.loadAnimation(activity, R.anim.shake);
-        binding.imNotification.startAnimation(shake);
+        binding.tvBalanceHome.startAnimation(shake);
 
 
-        binding.imNotification.setOnClickListener(new View.OnClickListener() {
+        binding.tvBalanceHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(activity, NotificationActivity.class);
-                startActivity(i);
+//                Intent i = new Intent(activity, NotificationActivity.class);
+//                startActivity(i);
             }
         });
-        binding.imHomewallet.setOnClickListener(new View.OnClickListener() {
+        binding.tvDepositHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(activity, MyAccountActivity.class);
+                Intent i = new Intent(activity, WebViewStripePayment.class);
                 startActivity(i);
             }
         });
@@ -368,7 +368,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
     }
 
     private void setupTabIcons1() {
-        binding.tabs.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.tabtextselected), PorterDuff.Mode.SRC_IN);
+        binding.tabs.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         binding.tabs.getTabAt(1).getIcon().setColorFilter(getResources().getColor(R.color.tabtextunselected), PorterDuff.Mode.SRC_IN);
         binding.tabs.getTabAt(2).getIcon().setColorFilter(getResources().getColor(R.color.tabtextunselected), PorterDuff.Mode.SRC_IN);
         binding.tabs.getTabAt(3).getIcon().setColorFilter(getResources().getColor(R.color.tabtextunselected), PorterDuff.Mode.SRC_IN);

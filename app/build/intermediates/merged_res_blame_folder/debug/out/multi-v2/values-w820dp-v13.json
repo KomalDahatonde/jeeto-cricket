@@ -4,7 +4,7 @@
             "outputFile": "com.jeeto.cricket.app-mergeDebugResources-69:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sheetal.yadav\\.gradle\\caches\\transforms-3\\265365f425a9dd1ab3f174f3dddc3841\\transformed\\jetified-plug-n-play-1.4.5\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "source": "C:\\Users\\Komal\\.gradle\\caches\\transforms-3\\265365f425a9dd1ab3f174f3dddc3841\\transformed\\jetified-plug-n-play-1.4.5\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
